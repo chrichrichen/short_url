@@ -1,14 +1,14 @@
-const mongoose = require('express')
+const mongoose = require('mongoose')
 const Schema = mongoose.Schema
 const urlSchema = new Schema({
-  shortUrl:{
+  shortURL:{
     type: String,
     required : true
   },
-  originUrl:{
+  originalURL:{
     type: String,
     required :true
   }
 })
 
-module.exports = mongoose.model('ShortUrl' , urlSchema)
+module.exports = mongoose.model('URL' , urlSchema)

@@ -1,0 +1,14 @@
+{{#if shortURL}}
+<div class="result">
+  <h3>Success!</h3>
+  <p id="generatedURL">{{origin}}/{{shortURL}}</p>
+</div>
+
+{{else}}
+<form action="/" method="POST">
+  <div class="container">
+    <input type="url" name="url" placeholder="Original URL" required />
+    <button class="shorten" type="submit">Shorten</button>
+  </div>
+</form>
+{{/if}}
